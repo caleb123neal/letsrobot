@@ -1,5 +1,5 @@
 import mod_utils
-import hardware.max7219
+import hardware.ledlights
 # Example for adding custom code to the controller
 module = None
 
@@ -10,7 +10,7 @@ def setup(robot_config):
  
  
     # Call the setup handler for max7219 LEDs
-    hardware.max7219.setup(robot_config)
+    hardware.ledlights.setup(robot_config)
  
     # This code calls the default setup function for your hardware.
     # global module
@@ -25,7 +25,7 @@ def move(args):
     
     
     # Call the command handler for max7219 LEDs
-    hardware.max7219.move(args)
+    hardware.ledlights.move(args)
     
     # This code calls the default command interpreter function for your hardware.
     module.move(args)
