@@ -9,10 +9,10 @@ def setup(robot_config):
 def move(args):
     command = args['command']
     
-    if command == 'L':
+    if command == 'L down':
       led.on()
         return
-    elif command == 'R':
+    elif command == 'R down':
        led.off()
         return
    return
